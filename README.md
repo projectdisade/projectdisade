@@ -1,16 +1,236 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT DISADE</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-color: #ffffff;
+            --accent-color: #ff3333;
+            --card-bg: #121212;
+        }
 
-<!--
-**projectdisade/projectdisade** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
 
-Here are some ideas to get you started:
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .insta-btn {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .insta-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 5%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://unsplash.com') no-repeat center center/cover;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: 5px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #888;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 5%;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid #222;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 350px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .order-btn {
+            display: inline-block;
+            width: 100%;
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            padding: 0.7rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .order-btn:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid #222;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Project Disade</div>
+        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
+        <a href="https://instagram.com" target="_blank" class="insta-btn">Instagram</a>
+    </header>
+
+    <section class="hero">
+        <h1>Project Disade</h1>
+        <p>Drop 01 // Now Available</p>
+        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
+        <a href="https://instagram.com" target="_blank" class="insta-btn">DM to Order</a>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Collection</h2>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">IMAGE PLACEHOLDER</div>
+                <div class="product-info">
+                    <div class="product-name">Disade Oversized Hoodie</div>
+                    <div class="product-price">$65.00</div>
+                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
+                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">IMAGE PLACEHOLDER</div>
+                <div class="product-info">
+                    <div class="product-name">Disade Graphic Tee</div>
+                    <div class="product-price">$35.00</div>
+                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
+                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">IMAGE PLACEHOLDER</div>
+                <div class="product-info">
+                    <div class="product-name">Disade Cargo Pants</div>
+                    <div class="product-price">$80.00</div>
+                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
+                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Project Disade. To order, please send us a direct message on <a href="https://instagram.com" target="_blank">Instagram</a>.</p>
+    </footer>
+
+</body>
+</html>
+
