@@ -40,7 +40,12 @@
             text-transform: uppercase;
         }
 
-        .insta-btn {
+        .social-buttons-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-btn {
             background-color: var(--text-color);
             color: var(--bg-color);
             padding: 0.6rem 1.2rem;
@@ -51,9 +56,10 @@
             letter-spacing: 1px;
             transition: all 0.3s ease;
             border-radius: 2px;
+            display: inline-block;
         }
 
-        .insta-btn:hover {
+        .social-btn:hover {
             background-color: var(--accent-color);
             color: var(--text-color);
         }
@@ -76,6 +82,13 @@
             font-size: 1.2rem;
             color: #888;
             margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .container {
@@ -136,11 +149,17 @@
         .product-price {
             color: var(--accent-color);
             font-weight: bold;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         .order-btn {
-            display: inline-block;
+            display: block;
             width: 100%;
             background-color: transparent;
             color: var(--text-color);
@@ -177,15 +196,21 @@
 
     <header>
         <div class="logo">Project Disade</div>
-        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
-        <a href="https://instagram.com" target="_blank" class="insta-btn">Instagram</a>
+        <div class="social-buttons-container">
+            <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL USERNAMES -->
+            <a href="https://instagram.com" target="_blank" class="social-btn">Instagram</a>
+            <a href="https://tiktok.com" target="_blank" class="social-btn">TikTok</a>
+        </div>
     </header>
 
     <section class="hero">
         <h1>Project Disade</h1>
         <p>Drop 01 // Now Available</p>
-        <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
-        <a href="https://instagram.com" target="_blank" class="insta-btn">DM to Order</a>
+        <div class="hero-buttons">
+            <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL USERNAMES -->
+            <a href="https://instagram.com" target="_blank" class="social-btn">DM on Instagram</a>
+            <a href="https://tiktok.com" target="_blank" class="social-btn">DM on TikTok</a>
+        </div>
     </section>
 
     <main class="container">
@@ -198,8 +223,11 @@
                 <div class="product-info">
                     <div class="product-name">Disade Oversized Hoodie</div>
                     <div class="product-price">$65.00</div>
-                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
-                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                    <div class="product-actions">
+                        <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL USERNAMES -->
+                        <a href="https://instagram.com" target="_blank" class="order-btn">DM on Insta to Buy</a>
+                        <a href="https://tiktok.com" target="_blank" class="order-btn">DM on TikTok to Buy</a>
+                    </div>
                 </div>
             </div>
 
@@ -209,8 +237,11 @@
                 <div class="product-info">
                     <div class="product-name">Disade Graphic Tee</div>
                     <div class="product-price">$35.00</div>
-                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
-                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                    <div class="product-actions">
+                        <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL USERNAMES -->
+                        <a href="https://instagram.com" target="_blank" class="order-btn">DM on Insta to Buy</a>
+                        <a href="https://tiktok.com" target="_blank" class="order-btn">DM on TikTok to Buy</a>
+                    </div>
                 </div>
             </div>
 
@@ -220,15 +251,18 @@
                 <div class="product-info">
                     <div class="product-name">Disade Cargo Pants</div>
                     <div class="product-price">$80.00</div>
-                    <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM LINK -->
-                    <a href="https://instagram.com" target="_blank" class="order-btn">DM to Buy</a>
+                    <div class="product-actions">
+                        <!-- REPLACE THE LINKS BELOW WITH YOUR ACTUAL USERNAMES -->
+                        <a href="https://instagram.com" target="_blank" class="order-btn">DM on Insta to Buy</a>
+                        <a href="https://tiktok.com" target="_blank" class="order-btn">DM on TikTok to Buy</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Project Disade. To order, please send us a direct message on <a href="https://instagram.com" target="_blank">Instagram</a>.</p>
+        <p>&copy; 2026 Project Disade. To order, send a direct message on <a href="https://instagram.com" target="_blank">Instagram</a> or <a href="https://tiktok.com" target="_blank">TikTok</a>.</p>
     </footer>
 
 </body>
